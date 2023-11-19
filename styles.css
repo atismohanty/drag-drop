@@ -1,0 +1,99 @@
+.container{
+    position:relative;
+    margin:auto;
+    width:80%;
+    height:100%;
+    background-color: #f5f3f3;
+}
+.col-wrapper
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+   }
+.col-container
+{
+    flex-basis:20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:100%;
+}
+.col-grid
+{
+    display:flex;
+    flex-direction: row;
+
+}
+.label-header
+{
+    width:80%;
+    margin: 2% 5%;
+    color:lightgrey;
+    font-size: .8em;
+    text-transform: capitalize;
+}
+.label-counter
+{
+    border-radius: 10%;
+    background: lightblue;
+    color:blue;
+    display: inline-block;
+    padding: 0% 2%;
+}
+
+.cards
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:2% 3%;
+    padding:2%;
+    height:10vh;
+}
+.drag-obj{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+
+}
+.col-container:nth-child(1) .drag-obj
+{
+    border-left:.1em solid blue;
+}
+
+.col-container:nth-child(2) .drag-obj
+{
+    border-left:.1em solid purple;
+}
+
+.col-container:nth-child(3) .drag-obj
+{
+    border-left:.1em solid lightseagreen;
+}
+
+.col-container:nth-child(4) .drag-obj
+{
+    border-left:.1em solid yellowgreen;
+}
+
+
+.cards .label{
+    font-family:Roboto;
+    width: 40%;
+    padding: 1%;
+    margin: 2% 2%;
+    font-size: .6em;
+}
+.label-bold
+{
+    font-weight: bolder;
+    font-size: .7em !important;
+}
+.cards .label:nth-child(even)
+{
+    text-align: right;
+}
